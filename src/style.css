@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'MyFont', sans-serif;
+}
+
+main {
+  margin-top: 30px;
+}
+
+.top {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 2px solid #d3d3d3;
+  padding: 15px;
+}
+
+.fa-refresh {
+  align-self: center;
+}
+
+.to-do {
+  margin: 0;
+}
+
+.top-b {
+  display: flex;
+  border: none;
+  width: 80%;
+}
+
+.boot-ic {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.fa-level-down {
+  transform: rotate(90deg);
+  padding: 15px 0;
+  align-self: center;
+}
+
+.fa-ellipsis-v {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.fa-trash {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.todo-list {
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+}
+
+.edit-task {
+  background: rgb(255, 255, 0);
+}
+
+.li-todo {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 0;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.check {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+.bottom {
+  text-align: center;
+  padding: 15px;
+}
+
+.bottom-bg {
+  background: #d9d9d9;
+  width: 90%;
+  margin: 0 auto;
+}
