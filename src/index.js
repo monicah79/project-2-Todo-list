@@ -1,19 +1,10 @@
 import loadList from './modules/load-list.js';
 import './style.css';
-import { delFromLocalStorage, changeLocalStorage, resetIndex } from './modules/local-storage.js';
+import { delFromLocalStorage, changeLocalStorage, resetIndex, saveToLocalStorage } from './modules/local-storage.js';
 
 const form = document.querySelector('.input-form');
 const ul = document.querySelector('.todo-list');
 const input = document.querySelector('.top-b');
-
-const saveToLocalStorage = (task, completed, index) => {
-  const todo = { task, completed, index };
-
-  const taskArr = localStorage.getItem('todos') ? JSON.parse(localStorage.getItem('todos')) : [];
-
-  taskArr.push(todo);
-  localStorage.setItem('todos', JSON.stringify(taskArr));
-};
 
 const addTodo = (e) => {
   e.preventDefault();
