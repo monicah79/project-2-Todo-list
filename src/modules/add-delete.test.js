@@ -1,3 +1,6 @@
+/**
+ * @jest-environment jsdom
+ */
 import { delFromLocalStorage, saveToLocalStorage } from './local-storage.js';
 
 describe('saveToLocalStorage', () => {
