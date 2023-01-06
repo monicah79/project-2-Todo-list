@@ -1,4 +1,4 @@
- const delFromLocalStorage = (index) => {
+const delFromLocalStorage = (index) => {
   let taskArr = localStorage.getItem('todos') ? JSON.parse(localStorage.getItem('todos')) : [];
 
   taskArr = taskArr.filter((item) => {
@@ -44,4 +44,6 @@ const resetIndex = () => {
   window.location.reload();
 };
 
-export { delFromLocalStorage, changeLocalStorage, resetIndex, saveToLocalStorage };
+export {
+  delFromLocalStorage, changeLocalStorage, resetIndex, saveToLocalStorage,
+};

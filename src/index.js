@@ -1,6 +1,8 @@
 import loadList from './modules/load-list.js';
 import './style.css';
-import { delFromLocalStorage, changeLocalStorage, resetIndex, saveToLocalStorage } from './modules/local-storage.js';
+import {
+  delFromLocalStorage, changeLocalStorage, resetIndex, saveToLocalStorage,
+} from './modules/local-storage.js';
 
 const form = document.querySelector('.input-form');
 const ul = document.querySelector('.todo-list');

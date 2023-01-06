@@ -14,11 +14,9 @@ module.exports = {
     clean: true,
   },
 
-  // devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/index.html'),
-      // title: 'Development',
     }),
   ],
   module: {

@@ -1,30 +1,37 @@
 import { delFromLocalStorage, saveToLocalStorage } from './local-storage.js';
 
-describe('testing add and remove functions', ()=>{
-    test('testing add', ()=>{
-        
-        const todo1 = 'task1'
-        const todo2 = 'task2'
-        const todo3 = 'task3'
-        const expectedLength = 3;
-        saveToLocalStorage(todo1);
-        saveToLocalStorage(todo2);
-        saveToLocalStorage(todo3);
+describe('saveToLocalStorage', () => {
+  test('Testing add to local storage function', () => {
+    const task = 'Go shopping';
+    const completed = false;
+    const index = 1;
 
-        expect(taskArr[0].task).toBe('task1')
-        expect(taskArr[1].task).toBe('task2')
-        expect(taskArr.length).toEqual(expectedLength)
-    })
-   
+    saveToLocalStorage(task, completed, index);
 
-    //remove
-    test('testing remove', ()=>{
-        const todo2 = 'task2'
-        const expectedLength = 2;
-        delFromLocalStorage(0);
+    const todos = JSON.parse(localStorage.getItem('todos'));
 
-        expect(taskArr.length).toHaveLength(expectedLength)
-        expect(taskArr[0].task).toBe(todo2)
+    expect(todos).toEqual([{ task, completed, index }]);
+  });
 
-    })
-})
+  // delete from local storage
+  describe('delFromLocalStorage', () => {
+    test('testing removing todos from local storage', () => {
+      const task1 = 'Go shopping';
+      const completed1 = false;
+      const index1 = 1;
+      const task2 = 'Do laundry';
+      const completed2 = true;
+      const index2 = 2;
+
+      saveToLocalStorage(task1, completed1, index1);
+      saveToLocalStorage(task2, completed2, index2);
+
+      delFromLocalStorage(index1);
+
+      const todos = JSON.parse(localStorage.getItem('todos'));
+
+      expect(todos).toEqual([{ task: task2, completed: completed2, index: index2 }]);
+      expect(todos.length).toBe(1);
+    });
+  });
+});

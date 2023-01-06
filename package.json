@@ -46,6 +46,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "localstorage-mock": "^1.0.2",
     "mocha": "^10.2.0",
     "module": "^1.1.0"
   }
