@@ -72,6 +72,11 @@ clone repository using this instructions:
 
 - LinkedIn: [https://www.linkedin.com/in/monica-wanjema-079192193/](https://linkedin.com/in/monica-wanjema-079192193)
 
+👤 **sabi mantock**
+
+- GitHub: [@SabiMantock](https://github.com/SabiMantock)
+
+- LinkedIn: [https://www.linkedin.com/in/sabimantock/](https://linkedin.com/in/sabimantock)
 
 ## 🤝 Contributing
 
