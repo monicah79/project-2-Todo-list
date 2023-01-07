@@ -11,6 +11,15 @@ const delFromLocalStorage = (index) => {
   localStorage.setItem('todos', JSON.stringify(taskArr));
 };
 
+const saveToLocalStorage = (task, completed, index) => {
+  const todo = { task, completed, index };
+
+  const taskArr = localStorage.getItem('todos') ? JSON.parse(localStorage.getItem('todos')) : [];
+
+  taskArr.push(todo);
+  localStorage.setItem('todos', JSON.stringify(taskArr));
+};
+
 const changeLocalStorage = (task, status, index) => {
   let taskArr = localStorage.getItem('todos') ? JSON.parse(localStorage.getItem('todos')) : [];
   taskArr = taskArr.map((item) => {
@@ -35,4 +44,6 @@ const resetIndex = () => {
   window.location.reload();
 };
 
-export { delFromLocalStorage, changeLocalStorage, resetIndex };
+export {
+  delFromLocalStorage, changeLocalStorage, resetIndex, saveToLocalStorage,
+};
