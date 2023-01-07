@@ -32,6 +32,18 @@ const changeLocalStorage = (task, status, index) => {
   localStorage.setItem('todos', JSON.stringify(taskArr));
 };
 
+const clearAllCompleted = () => {
+  const taskArr = localStorage.getItem('todos') ? JSON.parse(localStorage.getItem('todos')) : [];
+  taskArr.filter((todo) => !todo.completed);
+  localStorage.setItem('todos', JSON.stringify(taskArr));
+};
+
+const updateCompleted = (id, completed) => {
+  const taskArr = localStorage.getItem('todos') ? JSON.parse(localStorage.getItem('todos')) : [];
+  taskArr[id].completed = completed;
+  localStorage.setItem('todos', JSON.stringify(taskArr));
+};
+
 const resetIndex = () => {
   const taskArr = localStorage.getItem('todos') ? JSON.parse(localStorage.getItem('todos')) : [];
   const arr = [];
@@ -45,5 +57,10 @@ const resetIndex = () => {
 };
 
 export {
-  delFromLocalStorage, changeLocalStorage, resetIndex, saveToLocalStorage,
+  delFromLocalStorage,
+  changeLocalStorage,
+  resetIndex,
+  saveToLocalStorage,
+  clearAllCompleted,
+  updateCompleted,
 };
