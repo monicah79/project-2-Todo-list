@@ -1,8 +1,10 @@
 # project-2-Todo-list
-![](https://img.shields.io/badge/Microverse-blueviolet)
-# Webpack-project
->webpack to do list
 
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+# Webpack-project
+
+>webpack to do list
 
 <a name="readme-top"></a>
 
@@ -19,16 +21,22 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
+- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -40,30 +48,46 @@
 ## 🛠 Built With <a name="built-with">Html/css, Javascript and bootstrap</a>
 
 
-## 🚀 Live Demo <a name="live-demo"></a>
+### Key Features <a name="key-features"></a>
 
+> Describe between 1-3 key features of the application.
+
+- Added event listener to the checkbox (change).
+- Updated items object's value for completed key upon user actions.
+- Implemented a function for the "Clear all completed" button.
+- Stored the updated array of items in local storage, so the user gets the correct list values after the page reloads
+
+## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://monicah79.github.io/To-Do-List/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+
 git & browser
 
 ### Setup
+
 clone repository using this instructions:
-  -git clone https://github.com/monicah79/To-Do-List.git
-  - cd to-do-list
+  -git clone <https://github.com/monicah79/To-Do-List.git>
+
+- cd to-do-list
   -code .
 
 ### Install
+
   -install npm and other dependansies
 
 
+### Run tests
+
+To run tests, run the following command:
+```
+npm run test
+```
 ## Authors
 
 👤 **monicah wanjema**
@@ -72,6 +96,11 @@ clone repository using this instructions:
 
 - LinkedIn: [https://www.linkedin.com/in/monica-wanjema-079192193/](https://linkedin.com/in/monica-wanjema-079192193)
 
+👤 **sabi mantock**
+
+- GitHub: [@SabiMantock](https://github.com/SabiMantock)
+
+- LinkedIn: [https://www.linkedin.com/in/sabimantock/](https://linkedin.com/in/sabimantock)
 
 ## 🤝 Contributing
 
