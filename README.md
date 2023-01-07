@@ -47,6 +47,16 @@
 
 ## 🛠 Built With <a name="built-with">Html/css, Javascript and bootstrap</a>
 
+
+### Key Features <a name="key-features"></a>
+
+> Describe between 1-3 key features of the application.
+
+- Added event listener to the checkbox (change).
+- Updated items object's value for completed key upon user actions.
+- Implemented a function for the "Clear all completed" button.
+- Stored the updated array of items in local storage, so the user gets the correct list values after the page reloads
+
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://monicah79.github.io/To-Do-List/)
