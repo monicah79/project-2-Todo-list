@@ -1,8 +1,10 @@
 # project-2-Todo-list
-![](https://img.shields.io/badge/Microverse-blueviolet)
-# Webpack-project
->webpack to do list
 
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+# Webpack-project
+
+>webpack to do list
 
 <a name="readme-top"></a>
 
@@ -19,16 +21,22 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
+- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -39,31 +47,37 @@
 
 ## 🛠 Built With <a name="built-with">Html/css, Javascript and bootstrap</a>
 
-
 ## 🚀 Live Demo <a name="live-demo"></a>
-
 
 - [Live Demo Link](https://monicah79.github.io/To-Do-List/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+
 git & browser
 
 ### Setup
+
 clone repository using this instructions:
-  -git clone https://github.com/monicah79/To-Do-List.git
-  - cd to-do-list
+  -git clone <https://github.com/monicah79/To-Do-List.git>
+
+- cd to-do-list
   -code .
 
 ### Install
+
   -install npm and other dependansies
 
 
+### Run tests
+
+To run tests, run the following command:
+```
+npm run test
+```
 ## Authors
 
 👤 **monicah wanjema**
